@@ -1,0 +1,41 @@
+extends javascript
+
+snippet des "Describe" w
+describe('${1:description}', function(){
+	$0
+});
+endsnippet
+
+snippet it "it" w
+it('${1:description}', function(${2:done}){
+	$3
+});$0
+endsnippet
+
+snippet bef "before each" w
+beforeEach(function(){
+	$1
+});$0
+endsnippet
+
+snippet aft "after each" w
+afterEach(function(){
+	$1
+});$0
+endsnippet
+
+snippet befa "before all" w
+beforeAll(function(){
+	$1
+});$0
+endsnippet
+
+snippet afta "after all" w
+afterAll(function() {
+	$1
+});$0
+endsnippet
+
+snippet ex "expect" w
+expect($1)$2;$0
+endsnippet

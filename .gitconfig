@@ -1,0 +1,33 @@
+[user]
+  name = Leon Yip
+  email = lyip1992@gmail.com
+[core]
+  autocrlf = input
+  safecrlf = true
+  editor = $(which vim)
+  precomposeunicode = true
+	excludesfile = /Users/leon_yip/.gitignore_global
+  sparseCheckout = true
+[alias]
+  type = cat-file -t
+  dump = cat-file -p
+[hub]
+  host = git.musta.ch
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
+[merge]
+  tool = vimdiff
+  conflictstyle = diff3
+[mergetool]
+  prompt = false
+[push]
+  default = current
+[rerere]
+  enabled = true
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true

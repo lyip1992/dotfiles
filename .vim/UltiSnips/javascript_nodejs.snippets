@@ -1,0 +1,33 @@
+extends javascript
+
+# Express snippets
+
+snippet eget "express GET"
+${1:app}.get('${2}', ${3});$0
+endsnippet
+
+snippet epost "express POST"
+${1:app}.post('${2}', ${3});$0
+endsnippet
+
+snippet eput "express PUT"
+${1:app}.put('${2}', ${3});$0
+endsnippet
+
+snippet edelete "express DELETE"
+${1:app}.delete('${2}', ${3});$0
+endsnippet
+
+# process snippets
+
+snippet stdout "stdout"
+process.stdout$0
+endsnippet
+
+snippet stdin "stdin"
+process.stdin$0
+endsnippet
+
+snippet stderr "stderr"
+process.stderr$0
+endsnippet

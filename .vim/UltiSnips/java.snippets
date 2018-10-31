@@ -1,0 +1,206 @@
+snippet ab "abstract" w
+abstract
+endsnippet
+
+snippet cs "case" w
+case $1:
+	$2
+$0
+endsnippet
+
+snippet ca "catch" w
+catch (${1:Exception} ${2:e}) {
+	$3
+}$0
+endsnippet
+
+snippet cl "class" w
+class ${1:MyClass} ${3:extends ${2:Parent} }${5:implements ${4:Interface} }{
+	$6
+}
+endsnippet
+
+snippet elif "else if" w
+else if ($1) {
+	$2
+}$0
+endsnippet
+
+snippet dow "do while" w
+do {
+	$1
+} while ($2);$0
+endsnippet
+
+snippet el "else" w
+else {
+	$1
+}$0
+endsnippet
+
+snippet fi "final" w
+final
+endsnippet
+
+snippet fy "finally" w
+finally {
+	$1
+}$0
+endsnippet
+
+snippet for "for" w
+for ($1; $2; $3) {
+	$4
+}$0
+endsnippet
+
+snippet if "if" w
+if ($1) {
+	$2
+}$0
+endsnippet
+
+snippet im "import" w
+import
+endsnippet
+
+snippet in "Interface" w
+interface ${1:MyInterface} ${3:extends ${2:Parent} }{
+	$0
+}
+endsnippet
+
+snippet pr "private" w
+private
+endsnippet
+
+snippet po "protected" w
+protected
+endsnippet
+
+snippet pu "public" w
+public
+endsnippet
+
+snippet re "return" w
+return
+endsnippet
+
+snippet st "static" w
+static
+endsnippet
+
+snippet sw "switch" w
+switch ($1) {
+	$2
+}$0
+endsnippet
+
+snippet sy "synchronized" w
+synchronized
+endsnippet
+
+snippet tn "throw new" w
+throw new $0
+endsnippet
+
+snippet th "throw" w
+throw $0
+endsnippet
+
+snippet tr "try" w
+try {
+	$1
+}$0
+endsnippet
+
+snippet v "variable" w
+${1:String} ${2:var}${3: = ${4:null}};$0
+endsnippet
+
+snippet br "break" w
+break;
+
+endsnippet
+
+snippet cos "constant string" w
+public static final String ${1:var} = $2;$0
+endsnippet
+
+snippet co "constant" w
+public static final ${1:String} ${2:var} = $3:$0
+endsnippet
+
+snippet de "default" w
+default:
+	$0
+endsnippet
+
+snippet fore "for (each)" w
+for ($1: $2) {
+	$3
+}$0
+endsnippet
+
+snippet imt "import junit.framework.TestCase" w
+import junit.framework.TestCase;
+$0
+endsnippet
+
+snippet j.b "java.beans." w
+java.beans.
+endsnippet
+
+snippet j.i "java.io." w
+java.io.
+endsnippet
+
+snippet j.m "java.math." w
+java.math.
+endsnippet
+
+snippet j.n "java.net." w
+java.net.
+endsnippet
+
+snippet j.u "java.util." w
+java.util.
+endsnippet
+
+snippet main "method (main)" w
+public static void main(String args[]) {
+	$0
+}
+endsnippet
+
+snippet m "method" w
+${1:void} ${2:method}($3) ${4:throws $5 }{
+	$6
+}$0
+endsnippet
+
+snippet p "print" w
+System.out.print($1);$0
+endsnippet
+
+snippet pl "println" w
+System.out.println($1);$0
+endsnippet
+
+snippet tc "test case" w
+public class ${1:MyTest} extends ${2:TestCase} {
+	$0
+}
+endsnippet
+
+snippet t "test" w
+public void test${1:Name}() throws Exception {
+	$0
+}
+endsnippet
+
+snippet wh "while" w
+while ($1) {
+	$2
+}$0
+endsnippet

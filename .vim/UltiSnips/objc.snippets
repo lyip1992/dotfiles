@@ -1,0 +1,55 @@
+snippet Imp "#import <>"
+#import <${1:Foundation/Foundation.h}>
+endsnippet
+
+snippet imp "#import ''"
+#import "$1"
+endsnippet
+
+snippet array "NSArray" 
+NSMutableArray *${1:array} = [NSMutableArray array];
+endsnippet
+
+snippet dict "NSDictionary" 
+NSMutableDictionary ${1:dict} = [NSMutableDictionary dictionary];
+endsnippet
+
+snippet sel "@selector(...)" 
+@selector(${1:method}:)
+endsnippet
+
+snippet clh "Class Interface" 
+@interface $1 : ${2:NSObject}
+
+{
+	$3
+}
+$0
+@end
+endsnippet
+
+snippet pool "Autorelease Pool" 
+@autoreleasepool {
+	$0
+}
+endsnippet
+
+snippet format "NSString with Format" 
+[NSString stringWithFormat:@"$1", $2]$0
+endsnippet
+
+snippet log "NSLog" 
+NSLog(@"${1:string}", ${2:replacements});
+endsnippet
+
+snippet for "for loop" 
+for( ${1:int} ${2:i} = ${3:0}; $2 < ${4:array.length}; $2${5:++} ){
+	$0
+}
+endsnippet
+
+snippet forin "for(... in ...)" 
+for( ${1:id} ${2:item} in ${3:array} ){
+	$0
+}
+endsnippet

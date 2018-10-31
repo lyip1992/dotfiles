@@ -1,0 +1,510 @@
+# A
+
+snippet anchor "Anchor" w
+<a href="${1:#}">$2</a>$0
+endsnippet
+
+snippet abbr "Abbreviation" w
+<abbr title="$1">$2</abbr>$0
+endsnippet
+
+snippet address "Address" w
+<address ${1:class="$2"}>$3</address>$0
+endsnippet
+
+snippet area "Area" w
+<area ${1:shape="${2:default}"} coords="$3" ${4:href="${5:#}"} />$0
+endsnippet
+
+snippet article "Article" w
+<article class="$1">$2</article>$0
+endsnippet
+
+snippet aside "Aside" w
+<aside class="$1">$2</aside>$0
+endsnippet
+
+snippet audio "Audio" w
+<audio src="$1">$2</audio>$0
+endsnippet
+
+# B
+
+snippet body "Body" w
+<body>$1</body>$0
+endsnippet
+
+snippet bold "Bold" w
+<b>$1</b>$0
+endsnippet
+
+snippet base "Base" w
+<base href="${1:#}" target="${2:_blank}" />$0
+endsnippet
+
+snippet bdi "Bi-Directional Isolation" w
+<bdi dir="${1:auto}">$2</bdi>$0
+endsnippet
+
+snippet bdo "Bi-Directional Override" w
+<bdo dir="${1:auto}">$2</bdo>$0
+endsnippet
+
+snippet blockquote "Blockquote" w
+<blockquote cite="${1:http://}">$2</blockquote>$0
+endsnippet
+
+snippet br "Line Breaker" w
+<br>$0
+endsnippet
+
+snippet button "Button" w
+<button type="${1:button}"${2: name="${3:name}"}>$4</button>$0
+endsnippet
+
+# C
+
+snippet canvas "Canvas" w
+<canvas id="${1:canvas}" width="${2:300}" height="${3:300}">$4</canvas>$0
+endsnippet
+
+snippet caption "Caption" w
+<caption>$1</caption>$0
+endsnippet
+
+snippet cite "Cite" w
+<cite>$1</cite>$0
+endsnippet
+
+snippet code "Code" w
+<code>$1</code>$0
+endsnippet
+
+snippet col "Column" w
+<col>$1</col>$0
+endsnippet
+
+snippet colgroup "Column Group" w
+<colgroup>$1</colgroup>$0
+endsnippet
+
+snippet content "Content" w
+<content select="$1">$2</content>$0
+endsnippet
+
+snippet -- "Comment" w
+<!-- $1 -->$0
+endsnippet
+
+# D
+
+snippet doctype "HTML - 5" w
+<!DOCTYPE html>$0
+endsnippet
+
+snippet data "Data" w
+<data value="$1">$2</data>$0
+endsnippet
+
+snippet datalist "Data List" w
+<datalist class="$1">$2</datalist>$0
+endsnippet
+
+snippet dd "Description" w
+<dd>$1</dd>$0
+endsnippet
+
+snippet del "Deleted Text" w
+<del>$1</del>$0
+endsnippet
+
+snippet details "Details" w
+<details ${1:open}>$2</details>$0
+endsnippet
+
+snippet dfn "Definition" w
+<dfn>$1</dfn>$0
+endsnippet
+
+snippet dl "Description List" w
+<dl class="$1">$2</dl>$0
+endsnippet
+
+snippet dt "Definition Term" w
+<dt>$1</dt>$0
+endsnippet
+
+snippet div "Div" w
+<div ${1:class="$2"}>$3</div>$0
+endsnippet
+
+# E
+
+snippet em "Emphasis" w
+<em>$1</em>$0
+endsnippet
+
+snippet embed "Embed" w
+<embed type="${1:video/quicktime}" src="${2:#}" width="${3:300}" height="${4:300}">$0
+endsnippet
+
+# F
+
+snippet fieldset "Fieldset" w
+<fieldset>$1</fieldset>$0
+endsnippet
+
+snippet figcaption "Figure Caption" w
+<figcaption>$1</figcaption>$0
+endsnippet
+
+snippet figure "Figure" w
+<figure>$1</figure>$0
+endsnippet
+
+snippet footer "Footer" w
+<footer>$1</footer>$0
+endsnippet
+
+snippet form "Form" w
+<form class="$1" action="${2:index.html}" method="${3:post}">$4</form>
+endsnippet
+
+# G
+
+# H
+
+snippet h1 "Heading 1" w
+<h1>$1</h1>$0
+endsnippet
+
+snippet h2 "Heading 2" w
+<h2>$1</h2>$0
+endsnippet
+
+snippet h3 "Heading 3" w
+<h3>$1</h3>$0
+endsnippet
+
+snippet h3 "Heading 4" w
+<h4>$1</h4>$0
+endsnippet
+
+snippet h5 "Heading 5" w
+<h5>$1</h5>$0
+endsnippet
+
+snippet h6 "Heading 6" w
+<h6>$1</h6>$0
+endsnippet
+
+snippet head "Head" w
+<head>$1</head>$0
+endsnippet
+
+snippet header "Header" w
+<header>$1</header>$0
+endsnippet
+
+snippet hr "Horizontal Rule" w
+<hr>$0
+endsnippet
+
+snippet html "HTML" w
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>$1</title>
+	</head>
+	<body>$2</body>
+</html>$0
+endsnippet
+
+# I
+
+snippet italic "Italic" w
+<i>$1</i>$0
+endsnippet
+
+snippet iframe "Inline Frame" w
+<iframe src="$1" width="$2" height="$3">$4</iframe>$0
+endsnippet
+
+snippet input "Input" w
+<input type="${1:button}" name="${2:name}" value="$3">$0
+endsnippet
+
+snippet img "Image" w
+<img src="$1" alt="$2" />$0
+endsnippet
+
+snippet ins "Inserted Text" w
+<ins>$1</ins>$0
+endsnippet
+
+# J
+
+# K
+
+snippet kbd "Keyboard Input" w
+<kbd>$1</kbd>$0
+endsnippet
+
+snippet keygen "Keygen" w
+<keygen name="${1:name}" challenge="${2:string}" keytype="${3:RSA}" keyparams="${4:medium}">$0
+endsnippet
+
+snippet label "Label" w
+<label${1: for="$2"}>$3</label>$0
+endsnippet
+
+snippet legend "Legend" w
+<legend>$1</legend>$0
+endsnippet
+
+snippet li "List Item" w
+<li>$1</li>$0
+endsnippet
+
+# M
+
+snippet main "Main" w
+<main>$1</main>$0
+endsnippet
+
+snippet map "Map" w
+<map>$1</map>$0
+endsnippet
+
+snippet mark "Mark" w
+<mark>$1</mark>$0
+endsnippet
+
+snippet menu "Menu" w
+<menu>$1</menu>$0
+endsnippet
+
+snippet menuitem "Menu Item" w
+<menuitem type="${1:command}" label="${2:Save}">$0
+endsnippet
+
+snippet meter "Meter" w
+<meter min="${1:200}" max="${2:500}" value="${3:350}">$0
+endsnippet
+
+snippet mailto "Mail Anchor" w
+<a href="mailto:${1:joe@example.com}?subject=${2:feedback}">${3:email me}</a>$0
+endsnippet
+
+snippet meta "Meta" w
+<meta name="${1:name}" content="${2:content}">$0
+endsnippet
+
+snippet nav "Navigation" w
+<nav>$1</nav>$0
+endsnippet
+
+snippet noscript "Noscript" w
+<noscript>$1</noscript>$0
+endsnippet
+
+# O
+
+snippet object "Object" w
+<object data="${1:http://}" type="${2:mimetype}">$3</object>$0
+endsnippet
+
+snippet ol "Ordered List" w
+<ol>$1</ol>$0
+endsnippet
+
+snippet optgroup "Option Group" w
+<optgroup label="${1:Group 1}">$2</optgroup>$0
+endsnippet
+
+snippet opt "Option" w
+<option${1: value="${2:option}"}>${3:option}</option>$0
+endsnippet
+
+snippet output "Output" w
+<output name="${1:result}">$2</output>$0
+endsnippet
+
+# P
+
+snippet paragraph "Paragraph" w
+<p>$1</p>$0
+endsnippet
+
+snippet param "Parameter" w
+<param name="${1:foo}" value="${2:bar}">$0
+endsnippet
+
+snippet pre "Preformatted Text" w
+<pre>$1</pre>$0
+endsnippet
+
+snippet progress "Progress" w
+<progress value="${1:50}" max="${2:100}">${3:50%}</progress>$0
+endsnippet
+
+# Q
+
+snippet quote "Quote" w
+<q cite="$1">$2</q>$0
+endsnippet
+
+# R
+
+snippet rb "Ruby Base" w
+<rb>$1</rb>$0
+endsnippet
+
+snippet rp "Ruby Parenthesis" w
+<rp>$1</rp>$0
+endsnippet
+
+snippet rt "Ruby Pronunciation" w
+<rt>$1</rt>$0
+endsnippet
+
+snippet rtc "Ruby Text Container" w
+<rtc>$1</rtc>$0
+endsnippet
+
+snippet ruby "Ruby Annotation" w
+<ruby>$1</ruby>$0
+endsnippet
+
+snippet strike "Strikethrough" w
+<s>$1</s>$0
+endsnippet
+
+snippet samp "Sample Output" w
+<samp>$1</samp>$0
+endsnippet
+
+snippet script "Script" w
+<script${1: type="${2:text/javascript}"}>$3</script>$0
+endsnippet
+
+snippet scriptsrc "Script With External Source" w
+<script src="$1" charset="${2:utf-8}"></script>$0
+endsnippet
+
+snippet section "Section" w
+<section>$1</section>$0
+endsnippet
+
+snippet select "Select" w
+<select class="$1" name="$2">$3</select>$0
+endsnippet
+
+snippet small "Small" w
+<small>$1</small>$0
+endsnippet
+
+snippet source "Source" w
+<source src="${1:http://}" type="${2:mimetype}">$0
+endsnippet
+
+snippet span "Span" w
+<span>$1</span>$0
+endsnippet
+
+snippet strong "Strong" w
+<strong>$1</strong>$0
+endsnippet
+
+snippet style "Style" w
+<style media="screen">$1</style>$0
+endsnippet
+
+snippet sub "Subscript" w
+<sub>$1</sub>$0
+endsnippet
+
+snippet sum "Summary" w
+<summary>$1</summary>$0
+endsnippet
+
+snippet sup "Superscript" w
+<sup>$1</sup>$0
+endsnippet
+
+# T
+
+snippet table "Table" w
+<table>$1</table>$0
+endsnippet
+
+snippet tbody "Table Body" w
+<tbody>$1</tbody>$0
+endsnippet
+
+snippet td "Table Cell" w
+<tbody>$1</tbody>$0
+endsnippet
+
+snippet template "Template" w
+<template id="$1">$2</template>$0
+endsnippet
+
+snippet textarea "Text Area" w
+<textarea name="${1:name}" rows="${2:8}" cols="${3:40}">$4</textarea>$0
+endsnippet
+
+snippet tfoot "Table Footer" w
+<tfoot>$1</tfoot>$0
+endsnippet
+
+snippet th "Table Header Cell" w
+<th>$1</th>$0
+endsnippet
+
+snippet thead "Table Head" w
+<thead>$1</thead>$0
+endsnippet
+
+snippet time "Time" w
+<time>$1</time>$0
+endsnippet
+
+snippet title "Title" w
+<title>${1:Page Title}</title>$0
+endsnippet
+
+snippet tr "Table Row" w
+<tr>$1</tr>$0
+endsnippet
+
+snippet track "Track" w
+<track kind="${1:subtitles}" src="${2:sampleSubtitles_en.srt}" srclang="${3:en}">$0
+endsnippet
+
+# U
+
+snippet under "Underline" w
+<track kind="${1:subtitles}" src="${2:sampleSubtitles_en.srt}" srclang="${3:en}">$0
+endsnippet
+
+snippet ul "Unordered List" w
+<ul>$1</ul>$0
+endsnippet
+
+# V
+
+snippet var "Variable" w
+<var>$1</var>$0
+endsnippet
+
+snippet video "Video" w
+<video src="${1:videofile.ogg}" ${2:autoplay} ${3:poster="${4:posterimage.jpg}"}>$5</video>$0
+endsnippet
+
+# W
+
+snippet wbr "Word Break Opportunity" w
+<wbr>$0
+endsnippet

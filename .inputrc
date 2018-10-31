@@ -1,0 +1,6 @@
+set editing-mode vi
+
+$if mode=vi
+  # Insert Mode
+  "jk": vi-movement-mode
+$endif

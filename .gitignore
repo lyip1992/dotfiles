@@ -1,0 +1,5 @@
+.netrwhist
+.DS_Store
+*.swp
+.vim/plugged
+.tmux/resurrect

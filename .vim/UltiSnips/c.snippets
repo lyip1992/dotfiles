@@ -1,0 +1,169 @@
+snippet def "#ifndef ... #define ... #endif" b
+#ifndef ${1:SYMBOL}
+#define $1
+
+$0
+
+#endif
+endsnippet
+
+snippet Inc "#include <>"
+#include <${1:.h}>$0
+endsnippet
+
+snippet inc "#include ''"
+#include "${1:.h}"$0
+endsnippet
+
+snippet mark "#pragma mark" b
+#if 0
+${1:#pragma mark -}
+#pragma mark $2
+#endif
+$0
+endsnippet
+
+snippet main "main" b
+int main(int argc, char const *argv[]){
+	${1:/* code */}
+	return 0;
+}
+endsnippet
+
+snippet for "For Loop" b
+for( size_t ${1:i} = 0; $1 < ${2:count}; ${3:++}$1${4:++}){
+	${5:/* code */}
+}
+endsnippet
+
+snippet once "Header Include-Guard" b
+fndef ${1:SYMBOL}
+#define $1
+
+${2}
+
+#endif /* end of include guard: $1 */
+$0
+endsnippet
+
+snippet sp "Shared Pointer" w
+typedef std::shared_ptr<${2:${1:my_type}_t}> ${3:${4:my_type}_ptr};
+endsnippet
+
+snippet td "Typedef" b
+typedef ${1:int} ${2:MyCustomType};
+endsnippet
+
+snippet do "Do While Loop" b
+do {
+	${0:/* code */}
+} while( ${1:/* condition */} );
+endsnippet
+
+snippet while "While Loop" b
+while( ${1:/* condition */} ){
+	${2:/* code */}
+}
+endsnippet
+
+snippet fprintf "fprintf" b
+fprintf(${1:stderr}, "${2:%s}\n", $3);$4
+endsnippet
+
+snippet if "If Condition" b
+if( ${1:/* condition */} ){
+	${2:/* code */}
+}
+endsnippet
+
+snippet eif "Else If Condition"
+else if( ${1:/* condition */} ){
+	${2:/* code */}
+}
+endsnippet
+
+snippet else "Else Condition"
+else {
+	${1:/* code */}
+}
+endsnippet
+
+snippet iff "If ElseIf" b
+if( ${1:/* condition */} ){
+	${2:/* code */}
+} else if( ${3:/* condition */} ){
+	${4:/* code */}
+}
+endsnippet
+
+snippet iffe "If ElseIf Else" b
+if( ${1:/* condition */} ){
+	${2:/* code */}
+} else if( ${3:/* condition */} ){
+	${4:/* code */}
+} else {
+	${5:/* code */}
+}
+endsnippet
+
+snippet switch "Switch Statement" b
+switch( ${1:/* expression */} ){
+	case ${2:/* value */}:
+		${3:/* code */}
+		${4:break;}$5
+
+	default:
+		${6:/* code */}
+}
+endsnippet
+
+snippet cs "case"
+case ${1:/* value */}:
+	${2:/* code */}
+	${3:break;}
+endsnippet
+
+snippet printf "printf" b
+printf("${1:%s}\n", $2);
+endsnippet
+
+snippet scanf "scanf" b
+scanf("${1:%s}\n", $2);
+endsnippet
+
+snippet st "struct" b
+struct ${1:name_t} {
+	${2:/* data */}
+};
+endsnippet
+
+snippet void "void" b
+void ${1:name}(${2:/* arguments */}){
+	${3:/* code */}
+}
+endsnippet
+
+snippet func "any function" b
+${1:int} ${2:name}(${3:/* arguments */}){
+	${5:/* code */}
+	return ${4:0};
+}
+endsnippet
+
+snippet wf "write file" b
+FILE *${1:fp};
+$1 = fopen("${2:filename.txt}", "w");
+if( $1 != NULL ){
+	fprintf($1,"${3:Some String}\n");
+	fclose($1);
+}
+endsnippet
+
+snippet rf "read file" b
+FILE *${1:fp};
+$1 = fopen("${2:filename.txt}", "r");
+if( $1 != NULL ){
+	fscanf($1,"${3:Some String}\n", ${4:&var});
+	fclose($1);
+}
+endsnippet
